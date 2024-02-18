@@ -17,9 +17,11 @@
 border: 2px dashed;
 border-color: rgba(19, 19, 24, 0.20);
 }
-.border {
-  border: 20px dashed;
+
+.diver{
+  border: 2px dashed;
+  border-top: none;
   border-left: none;
-  border-right: none;
+  border-bottom: none;
   border-color: rgba(19, 19, 24, 0.20);
 }
