@@ -1,103 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TicketTrail</title>
     <!-- Css Style Link -->
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
-    <!-- Tailwind and daisyui link -->   
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-<!-- Google font Link -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Tailwind and daisyui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;800&display=swap" rel="stylesheet">
-</head> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+
 <body class="raleway">
     <header>
-       <section class="container mx-auto ">
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+        <section class="container mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[1.125rem] font-semibold text-[#030712B3]">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="w-64"><img src="./images/logo2.png"></a>
                 </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[1.125rem] font-semibold text-[#030712B3]">
-                  <li><a>Home</a></li>
-                  <li><a>About</a></li>
-                  <li><a>Destination</a></li>
-                  <li><a>Search</a></li>
-                </ul>
-              </div>
-              <a class="w-64"><img src="./images/logo2.png"></a>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-[1.125rem] font-semibold text-[#030712B3]">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn w-32 lg:w-36 h-7 lg:h-16 bg-[#1DD1001A] border-[1px] border-[#1cd1005d] rounded-2xl"> <span class="text-[#1DD100] text-xl font-bold">Bus</span> <img src="./images/bus-icon.png"></a>
+                </div>
             </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1 text-[1.125rem] font-semibold text-[#030712B3]">
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Destination</a></li>
-                <li><a>Search</a></li>
-              </ul>
-            </div>
-            <div class="navbar-end">
-              <a class="btn w-32 lg:w-36 h-7 lg:h-16 bg-[#1DD1001A] border-[1px] border-[#1cd1005d] rounded-2xl"> <span class="text-[#1DD100] text-xl font-bold">Bus</span> <img src="./images/bus-icon.png"></a>
-            </div>
-          </div>
-       </section>
+        </section>
 
-       <!-- banner section -->
-     <section class="container mx-auto my-20">
-      <div class="h-[720px]  bg-img text-white relative ">
-        <div class="text-center">
-            <h1 class=" text-6xl pt-24 font-extrabold">End-to-End Travel with
-            </h1>
-            <h2 class="text-[#00d126] mt-8 text-6xl font-extrabold">SH Travel</h2>
-            <p class=" pt-8 pb-8 px-60">Welcome to SH Travel, your gateway to hassle-free and enjoyable travel experiences. Whether you're planning a weekend getaway, a business trip, or a vacation with family and friends, our premium bus services ensure that every mile of your journey is as comfortable and convenient as possible.</p>
-            <button class="btn btn-primary bg-[#1DD100] text-[#030712] font-bold px-6 h-14">Buy Tickets</button>
-        </div>
-      </div>
-      <div class="absolute flex gap-9 left-72 -bottom-24">
-        <!-- card 1 -->
-       <div class="flex bg-white border-b-[3px] border-[#1DD100] gap-3 rounded-3xl  pt-8  w-80">
-          <div>
-             <img class="pb-9 ml-8" src=".//images/people.png" alt="">
-          </div>
-         <div class="roboto">
-             <h1 class="text-4xl font-extrabold mb-2">500K+</h1>
-             <p class="pb-8">Registered users</p></div>
-         </div>
-           <!-- card 2 -->
-       <div class="flex bg-white border-b-[3px] border-[#1DD100] gap-3 rounded-3xl  pt-8  w-80">
-          <div>
-             <img class="pb-9 ml-8" src=".//images/ticket-cupon.png" alt="">
-          </div>
-         <div class="roboto">
-             <h1 class="text-4xl font-extrabold mb-2">1.7 lacks</h1>
-             <p class="pb-8">Tickets sold</p></div>
-         </div>
-   <!-- card 3-->
-       <div class="flex bg-white border-b-[3px] border-[#1DD100] gap-3 rounded-3xl  pt-8  w-80">
-          <div>
-             <img class="pb-9 ml-8" src=".//images/stoppage.png" alt="">
-          </div>
-         <div class="roboto">
-             <h1 class="text-4xl font-extrabold mb-2">80K+</h1>
-             <p class="pb-8">Rental partners</p></div>
-         </div>
-      </div>
-     </section>
+        <!-- banner section -->
+        <section class="container mx-auto my-20">
+          <div class="flex relative">
+            <div class="h-[720px]  bg-img text-white ">
+                <div class="text-center">
+                    <h1 class=" text-6xl pt-24 font-extrabold">End-to-End Travel with
+                    </h1>
+                    <h2 class="text-[#00d126] mt-8 text-6xl font-extrabold">SH Travel</h2>
+                    <p class=" pt-8 pb-8 px-60">Welcome to SH Travel, your gateway to hassle-free and enjoyable travel experiences. Whether you're planning a weekend getaway, a business trip, or a vacation with family and friends, our premium bus services ensure that every mile
+                        of your journey is as comfortable and convenient as possible.</p>
+                    <button class="btn btn-primary bg-[#1DD100] text-[#030712] font-bold px-6 h-14">Buy Tickets</button>
+                </div>
+            </div>
+              <div class="flex gap-9 left-60 -bottom-20 absolute">
+                    <!-- card 1 -->
+                    <div class="flex bg-white border-b-[3px] border-[#1DD100] gap-3 rounded-3xl  pt-8  w-80">
+                        <div>
+                            <img class="pb-9 ml-8" src=".//images/people.png" alt="">
+                        </div>
+                        <div class="roboto">
+                            <h1 class="text-4xl font-extrabold mb-2">500K+</h1>
+                            <p class="pb-8">Registered users</p>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="flex bg-white border-b-[3px] border-[#1DD100] gap-3 rounded-3xl  pt-8  w-80">
+                        <div>
+                            <img class="pb-9 ml-8" src=".//images/ticket-cupon.png" alt="">
+                        </div>
+                        <div class="roboto">
+                            <h1 class="text-4xl font-extrabold mb-2">1.7 lacks</h1>
+                            <p class="pb-8">Tickets sold</p>
+                        </div>
+                    </div>
+                    <!-- card 3-->
+                    <div class="flex bg-white border-b-[3px] border-[#1DD100] gap-3 rounded-3xl  pt-8  w-80">
+                        <div>
+                            <img class="pb-9 ml-8" src=".//images/stoppage.png" alt="">
+                        </div>
+                        <div class="roboto">
+                            <h1 class="text-4xl font-extrabold mb-2">80K+</h1>
+                            <p class="pb-8">Rental partners</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </header>
-    <main>
 
+    <main>
+        <!-- coupon section -->
+        <section class="container mx-auto my-56">
+            <h1 class="text-center text-5xl font-bold text-[#111011bb] py-7">Best offers for you</h1>
+            <!-- coupon 1 -->
+            <div class="flex justify-between">
+                <div class="bg-[#FFBF0F] w-[750px] flex  justify-around rounded-[24px]">
+                    <div class="my-[3.25rem] ml-[3.2rem]">
+                        <h1 class="text-[3rem] roboto font-bold">15% OFF</h1>
+                        <h3 class="text-2xl font-semibold my-4">on your next purchase</h3>
+                        <h3 class="text-[18px]"> use by January 2024</h3>
+                    </div>
+
+                    <div class="my-[4.25rem] ml-[3.2rem]">
+                        <h1 class="text-[3rem] font-bold">NEW15</h1>
+                        <h3 class="text-[20px] font-semibold my-4 ">Coupon Code</h3>
+                    </div>
+
+                </div>
+                <!-- coupon 2 -->
+                <div class="bg-[#F78C9C] w-[750px] flex  justify-around rounded-[24px]">
+                  <div class="my-[3.25rem] ml-[3.2rem]">
+                      <h1 class="text-[3rem] roboto font-bold">20% OFF</h1>
+                      <h3 class="text-2xl font-semibold my-4">on your next purchase</h3>
+                      <h3 class="text-[18px]"> use by January 2024</h3>
+                  </div>
+
+                  <div class="my-[4.25rem] ml-[3.2rem]">
+                      <h1 class="text-[3rem] font-bold">Couple 20</h1>
+                      <h3 class="text-[20px] font-semibold my-4 ">Coupon Code</h3>
+                  </div>
+
+              </div>
+            </div>
+        </section>
     </main>
     <footer>
 
     </footer>
-    
+
 </body>
+
 </html>
