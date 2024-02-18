@@ -20,7 +20,8 @@
 
 <body class="raleway">
 	<header>
-		<section class="container mx-auto">
+		<!-- navbar section start -->
+		  <section class="container mx-auto">
 			<div class="navbar bg-base-100">
 				<div class="navbar-start">
 					<div class="dropdown">
@@ -49,9 +50,11 @@
 					<a class="btn w-32 lg:w-36 h-7 lg:h-16 bg-[#1DD1001A] border-[1px] border-[#1cd1005d] rounded-2xl"> <span class="text-[#1DD100] text-xl font-bold">Bus</span> <img src="./images/bus-icon.png"></a>
 				</div>
 			</div>
-		</section>
-		<!-- banner section -->
-		<section class="container mx-auto my-20">
+		 </section>
+		<!--navbar section end -->
+		
+		<!-- banner section  start-->
+	      <section class="container mx-auto my-20">
 			<div class="flex relative">
 				<div class="">
 					<div class="text-center h-[720px] text-white bg-img">
@@ -89,31 +92,33 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		  </section>
+		<!-- banner section end-->
+
 	</header>
 	<main>
-		<!-- coupon section -->
+	<!-- coupon section start -->
 		<section class="container mx-auto my-56">
 			<h1 class="text-center text-5xl font-bold text-[#111011bb] py-7">Best offers for you</h1>
 			<!-- coupon 1 -->
 			<div class=" grid grid-cols-2 gap-5">
-				<div class="bg-[#FFBF0F] h-[350px] flex  justify-around rounded-[24px]">
+				<div class="bg-[#FFBF0F]  flex  justify-around rounded-[24px]">
 					<div class="my-[3.25rem] ml-[3.2rem]">
 						<h1 class="text-[3rem] roboto font-bold">15% OFF</h1>
 						<h3 class="text-2xl font-semibold my-4">on your next purchase</h3>
 						<h3 class="text-[18px]"> use by January 2024</h3> </div>
-					<div> <img class="w-5/6" src="./images/info-devider.png"> </div>
+					<div> <img class="h-full" src="./images/cupon-devider.png"> </div>
 					<div class="my-[4.25rem] ml-[3.2rem]">
 						<h1 class="text-[3rem] font-bold">NEW15</h1>
 						<h3 class="text-[20px] font-semibold my-4 ">Coupon Code</h3> </div>
 				</div>
 				<!-- coupon 2 -->
-				<div class="bg-[#F78C9C] h-[350px] flex  justify-around rounded-[24px]">
+				<div class="bg-[#F78C9C]  flex  justify-around rounded-[24px]">
 					<div class="my-[3.25rem] ml-[3.2rem]">
 						<h1 class="text-[3rem] roboto font-bold">20% OFF</h1>
 						<h3 class="text-2xl font-semibold my-4">on your next purchase</h3>
 						<h3 class="text-[18px]"> use by January 2024</h3> </div>
-					<div> <img class="w-5/6" src="./images/info-devider.png"> </div>
+					<div> <img class="h-full" src="./images/cupon-devider.png"> </div>
 					<div class="my-[4.25rem] ml-[3.2rem]">
 						<h1 class="text-[3rem] font-bold">Couple 20</h1>
 						<h3 class="text-[20px] font-semibold my-4 ">Coupon Code</h3> </div>
@@ -123,13 +128,15 @@
 				</div>
 			</div>
 		</section>
-		<!-- container-form-chose-->
-		<section class="bg-[#F7F8F8] border-t-[2px] border-[#1DD100] rounded-t-[88px]">
+    <!-- coupon section end -->
+
+	<!--Bus info start-->
+		<section class="bg-[#F7F8F8] border-t-[2px] border-[#1DD100] rounded-t-[88px] my-24 p-7">
 			<section class="container mx-auto text-center">
 				<h1 class=" text-4xl font-bold text-[#030712] mt-28 mb-6">SOHEL Paribahan</h1>
 				<p class="text-[18px] roboto mb-12 ">You need to use simple app to buy sohel Paribahan online tickets. You must enter your own place name. Then name the place where you will go. For sohel Paribahan online ticket you need to give your journey time. Clicking on the search button on Erpa will bring up the list of all buses according to your destination and date. You have to buy your preferred sohel Paribahan online ticket from that list as per your preferred time.</p>
 			</section>
-			<!-- date time section -->
+		<!-- Ticketing interface start-->
 			<section class="container mx-auto mb-7">
 				<div class="grid grid-cols-4 gap-6 bg-white  rounded-3xl">
 					<section class="col-span-2 my-8 ml-8">
@@ -143,8 +150,10 @@
 							</div>
 							<!-- 40 seat button -->
 							<div>
-								<button class="btn bg-[#1DD10026]   rounded-[12px] gap-3"> <img src="./images/seat-green.png">
-									<h3 class="text-[#1DD100]">40 Seats left</h3> </button>
+								<div class=" flex bg-[#1DD10026] roboto  rounded-[12px] gap-3 py-5 px-5"> 
+									<img src="./images/seat-green.png">
+									<h3 class="text-[#1DD100] font-semibold text-2xl"><span>40</span> Seats left</h3> 
+								</div>
 							</div>
 						</div>
 						<!-- route section -->
@@ -171,9 +180,10 @@
 					<!-- tricked  price -->
 					<div class="mt-14"> <img class="w-[100px]" src="./images/fare.png">
 						<h1 class="text-5xl font-bold">550 Taka <br> <span class="font-normal text-xl roboto">Per Seat</span></h1></div>
-			</section>
+			  </section>
+
 			<!-- Seat Buy section start -->
-			<section class="container mx-auto grid grid-cols-2  bg-white rounded-2xl ">
+			   <section class="container mx-auto grid grid-cols-2  bg-white rounded-2xl ">
 				<!-- Select Your Seat container start -->
 				<div class="diver">
 					<!-- Select Your Seat -->
@@ -275,7 +285,7 @@
 					</div>
 					<!-- Seat Container End -->
 				</div>
-				<!-- Select Your Seat container start -->
+				<!-- Select Your Seat container end -->
 				<!-- Seat Buy Containers end  -->
 				<!-- Select Your Seat -->
 				<section>
@@ -346,13 +356,46 @@
 							<button class=" w-full bg-[#1DD100] border-none text-2xl text-white py-4 px-16 rounded-[8px] font-semibold">Apply</button>
 						</div>
 					</form>
+
 					<!-- Passenger Name info start -->
 				</section>
-			</section>
+			   </section>
 			<!-- Seat Buy section end -->
+
+		<!-- Ticketing interface End-->
+
+
+			
 		</section>
+	<!--Bus info End-->
 	</main>
-	<footer> </footer>
+	<footer>
+
+		<footer class="footer p-10 bg-slate-400 text-white">
+			<nav>
+			  <h6 class="footer-title">Services</h6> 
+			  <a class="link link-hover">Branding</a>
+			  <a class="link link-hover">Design</a>
+			  <a class="link link-hover">Marketing</a>
+			  <a class="link link-hover">Advertisement</a>
+			</nav> 
+			<nav>
+			  <h6 class="footer-title">Company</h6> 
+			  <a class="link link-hover">About us</a>
+			  <a class="link link-hover">Contact</a>
+			  <a class="link link-hover">Jobs</a>
+			  <a class="link link-hover">Press kit</a>
+			</nav> 
+			<nav>
+			  <h6 class="footer-title">Social</h6> 
+			  <div class="grid grid-flow-col gap-4">
+				<a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a>
+				<a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a>
+				<a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+			  </div>
+			</nav>
+		  </footer>
+		 </footer>
 </body>
 
 </html>
