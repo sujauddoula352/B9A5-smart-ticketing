@@ -5,40 +5,41 @@ for (let seat of seats) {
     seat.addEventListener("click", function () {
     /**---------seat background-------------**/
     seat.classList.add("bg-green-500");
-    console.log(seat);
     seat.classList.remove('hov')
-
         const seatName = seat.innerText;
         const price = parseInt(document.querySelector("#ticket-price").innerText);
         totalPrice = totalPrice + price;
         document.getElementById("Total-Aumont").innerText = totalPrice;
-        const ticketTitleContainer = document.getElementById("seat-title-container");
 
+        const ticketTitleContainer = document.getElementById("seat-title-container");
+        const grandTotal = document.getElementById('Grand-Total');
+        grandTotal.innerText = totalPrice;
         const addToCardContent = document.createElement('div');
         addToCardContent.classList.add("text-xl","roboto", "mt-8", "flex", "justify-between", "mx-8", "mb-4");
         const h3 = document.createElement('h3');
         h3.innerText = seatName;
         h3.classList.add("text-xl");
         addToCardContent.appendChild(h3);
-
         const p = document.createElement('p');
         p.innerText = 'Economy';
         p.classList.add("text-xl");
         addToCardContent.appendChild(p);  
-
         const h2 = document.createElement('h2');
         h2.innerText = price;
         h2.classList.add('text-2xl');
         addToCardContent.appendChild(h2);
         ticketTitleContainer.appendChild(addToCardContent);
+
         const seatCount = document.getElementById('seat-count');
         seatCount.innerText = parseInt(bookingSeat);
         bookingSeat++
 
-        // const availableSet = document.getElementById('available-set');
-        // availableSet.innerText = availableSet.innerText - bookingSeat ;
-      
-
+        const availableSet = document.getElementById('available-set');
+       const currentAvailableSetNumber = availableSet.innerText;
+       const currentAvailableSet = parseInt(currentAvailableSetNumber);
+       const newAvailableSet = currentAvailableSet - 1;
+       availableSet.innerText = newAvailableSet 
+       
     });
 }
 
@@ -64,7 +65,7 @@ const couponBtn = document.getElementById('coupon-apply');
            const discountSection = document.getElementById("discount-section");
            discountSection.classList.add('hidden');
            const grandTotal = document.getElementById('Grand-Total');
-           grandTotal.innerText = totalPrice - discount;
+           grandTotal.innerText -= discount;
 
         }else if (couponCod ==='NEW15'){
         const discount = totalPrice*0.15;
@@ -80,13 +81,13 @@ const couponBtn = document.getElementById('coupon-apply');
        const discountSection = document.getElementById("discount-section");
        discountSection.classList.add('hidden');
        const grandTotal = document.getElementById('Grand-Total');
-       grandTotal.innerText = totalPrice - discount;
+       grandTotal.innerText -= discount;
 }
 else{
     alert('invalid coupont')
 }
- 
-couponCod
+
+
     
 
      });
