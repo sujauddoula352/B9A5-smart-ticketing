@@ -23,13 +23,14 @@
 //         h3.innerText = 'Economy'; 
 //         seatTitleContainer.appendChild(h3);       
 // }
-// function ticketPrice(){
+// function ticketPrice(elementId){
 //  const seatTitleContainer = document.getElementById(elementId)
+//  const createDivElement = document.createElement('div');
 //         const h3 = document.createElement("h3");
 //         h3.innerText = price; 
-//         seatTitleContainer.appendChild(h3);       
+//         createDivElement.appendChild(h3);       
 // }
+// function seatBackground(elementId){
 
 
-//         
 // }

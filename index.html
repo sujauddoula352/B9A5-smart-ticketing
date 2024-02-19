@@ -148,7 +148,8 @@
 							<!-- 40 seat button -->
 							<div>
 								<div class=" flex bg-[#1DD10026] roboto  rounded-[12px] gap-3 py-5 px-5"> <img src="./images/seat-green.png">
-									<h3 class="text-[#1DD100] font-semibold text-2xl"><span>40</span> Seats left</h3> </div>
+									<h3 class="text-[#1DD100] font-semibold text-2xl">
+										<span id="available-set">40</span> Seats left</h3> </div>
 							</div>
 						</div>
 						<!-- route section -->
@@ -197,85 +198,88 @@
 					</div>
 					<!-- driver section -->
 					<!-- Seat Container  start -->
-					<div id="select-seat">
+					<div id="select-seat roboto">
 						<!-- seat A  -->
 						<div class="flex mx-8 gap-4 text-2xl font-semibold items-center my-6">
 							<div>A</div>
 							<div class="grid grid-cols-2">
-								<div class="flex"> <kbd id="A1" class="kbd bg-green-500 mx-8 px-10">A1</kbd> <kbd id="A2" class="kbd mx-8 px-10">A2</kbd> </div>
-								<div class="flex"> <kbd id="A2" class="kbd mx-8 px-10">A3</kbd> <kbd id="A3" class="kbd mx-8 px-10">A4</kbd> </div>
+								<div class="flex"> <kbd id="A1" class="kbd hov  mx-8 px-10">A1</kbd> <kbd id="A2" class="kbd hov mx-8 px-10">A2</kbd> </div>
+								<div class="flex"> <kbd id="A2" class="kbd hov mx-8 px-10">A3</kbd> <kbd id="A3" class="kbd hov mx-8 px-10">A4</kbd> </div>
 							</div>
 						</div>
 						<!-- seat B  -->
 						<div class="flex mx-8 gap-4 text-2xl font-semibold items-center my-6">
 							<div>B</div>
 							<div class="grid grid-cols-2">
-								<div class="flex"> <kbd id="B1" class="kbd mx-8 px-10">B1</kbd> <kbd id="B2" class="kbd mx-8 px-10">B2</kbd> </div>
-								<div class="flex"> <kbd id="B2" class="kbd mx-8 px-10">B3</kbd> <kbd id="B3" class="kbd mx-8 px-10">B4</kbd> </div>
+								<div class="flex"> <kbd id="B1" class="kbd hov mx-8 px-10">B1</kbd> <kbd id="B2" class="kbd hov mx-8 px-10">B2</kbd> </div>
+								<div class="flex"> <kbd id="B2" class="kbd hov mx-8 px-10">B3</kbd> <kbd id="B3" class="kbd hov mx-8 px-10">B4</kbd> </div>
 							</div>
 						</div>
 						<!-- seat C  -->
 						<div class="flex mx-8 gap-4 text-2xl font-semibold items-center my-6">
 							<div>B</div>
 							<div class="grid grid-cols-2">
-								<div class="flex"> <kbd id="C1" class="kbd mx-8 px-10">C1</kbd> <kbd id="C2" class="kbd mx-8 px-10">C2</kbd> </div>
-								<div class="flex"> <kbd id="C2" class="kbd mx-8 px-10">C3</kbd> <kbd id="C3" class="kbd mx-8 px-10">C4</kbd> </div>
+								<div class="flex"> <kbd id="C1" class="kbd hov mx-8 px-10">C1</kbd> <kbd id="C2" class="kbd hov mx-8 px-10">C2</kbd> </div>
+								<div class="flex"> <kbd id="C2" class="kbd hov mx-8 px-10">C3</kbd> <kbd id="C3" class="kbd hov mx-8 px-10">C4</kbd> </div>
 							</div>
 						</div>
 						<!-- seat D  -->
 						<div class="flex mx-8 gap-4 text-2xl font-semibold items-center my-6">
 							<div>D</div>
 							<div class="grid grid-cols-2">
-								<div class="flex"> <kbd id="D1" class="kbd mx-8 px-10">D1</kbd> <kbd id="D2" class="kbd mx-8 px-10">D2</kbd> </div>
-								<div class="flex"> <kbd id="D2" class="kbd mx-8 px-10">D3</kbd> <kbd id="D3" class="kbd mx-8 px-10">D4</kbd> </div>
+								<div class="flex"> <kbd id="D1" class="kbd hov mx-8 px-10">D1</kbd> <kbd id="D2" class="kbd hov mx-8 px-10">D2</kbd> </div>
+								<div class="flex"> <kbd id="D2" class="kbd hov mx-8 px-10">D3</kbd> <kbd id="D3" class="kbd hov mx-8 px-10">D4</kbd> </div>
 							</div>
 						</div>
 						<!-- seat E  -->
 						<div class="flex mx-8 gap-4 text-2xl font-semibold items-center my-6">
 							<div>E</div>
 							<div class="grid grid-cols-2">
-								<div class="flex"> <kbd id="E1" class="kbd mx-8 px-10">E1</kbd> <kbd id="E2" class="kbd mx-8 px-10">E2</kbd> </div>
-								<div class="flex"> <kbd id="E2" class="kbd mx-8 px-10">E3</kbd> <kbd id="E3" class="kbd mx-8 px-10">E4</kbd> </div>
+								<div class="flex"> <kbd id="E1" class="kbd hov mx-8 px-10">E1</kbd> <kbd id="E2" class="kbd hov mx-8 px-10">E2</kbd> </div>
+								<div class="flex"> <kbd id="E2" class="kbd hov mx-8 px-10">E3</kbd> <kbd id="E3" class="kbd hov mx-8 px-10">E4</kbd> </div>
 							</div>
 						</div>
 						<!-- seat F  -->
 						<div class="flex mx-8 gap-4 text-2xl font-semibold items-center my-6">
 							<div>F</div>
 							<div class="grid grid-cols-2">
-								<div class="flex"> <kbd id="F1" class="kbd mx-8 px-10">F1</kbd> <kbd id="F2" class="kbd mx-8 px-10">F2</kbd> </div>
-								<div class="flex"> <kbd id="F2" class="kbd mx-8 px-10">F3</kbd> <kbd id="F3" class="kbd mx-8 px-10">F4</kbd> </div>
+								<div class="flex"> <kbd id="F1" class="kbd hov mx-8 px-10">F1</kbd> <kbd id="F2" class="kbd hov mx-8 px-10">F2</kbd> </div>
+								<div class="flex"> <kbd id="F2" class="kbd hov mx-8 px-10">F3</kbd> <kbd id="F3" class="kbd hov mx-8 px-10">F4</kbd> </div>
 							</div>
 						</div>
 						<!-- seat G  -->
 						<div class="flex mx-8 gap-4 text-2xl font-semibold items-center my-6">
 							<div>G</div>
 							<div class="grid grid-cols-2">
-								<div class="flex"> <kbd id="G1" class="kbd mx-8 px-10">G1</kbd> <kbd id="G2" class="kbd mx-8 px-10">G2</kbd> </div>
-								<div class="flex"> <kbd id="G2" class="kbd mx-8 px-10">G3</kbd> <kbd id="G3" class="kbd mx-8 px-10">G4</kbd> </div>
+								<div class="flex"> <kbd id="G1" class="kbd hov mx-8 px-10">G1</kbd> <kbd id="G2" class="kbd hov mx-8 px-10">G2</kbd> </div>
+								<div class="flex"> <kbd id="G2" class="kbd hov mx-8 px-10">G3</kbd> <kbd id="G3" class="kbd hov mx-8 px-10">G4</kbd> </div>
 							</div>
 						</div>
 						<!-- seat H  -->
-						<div class="flex mx-8 gap-4 text-2xl font-semibold items-center my-6">
+						<div class="flex mx-8 gap-3 text-2xl font-semibold items-center my-6">
 							<div>H</div>
 							<div class="grid grid-cols-2">
-								<div class="flex"> <kbd id="H1" class="kbd mx-8 px-10">H1</kbd> <kbd id="H2" class="kbd mx-8 px-10">H2</kbd> </div>
-								<div class="flex"> <kbd id="H2" class="kbd mx-8 px-10">H3</kbd> <kbd id="H3" class="kbd mx-8 px-10">H4</kbd> </div>
+								<div class="flex">
+									<kbd id="A1" class="kbd hov mx-8 px-10">H1</kbd> 
+									<kbd id="A2" class="kbd hov mx-8 px-10">H2</kbd> 
+								</div>
+								<div class="flex"> <kbd id="A2" class="kbd hov mx-8 px-10">H3</kbd> <kbd id="A3" class="kbd hov mx-8 px-10">H4</kbd> </div>
 							</div>
 						</div>
 						<!-- seat I  -->
 						<div class="flex mx-8 gap-4 text-2xl font-semibold items-center my-6">
 							<div>I</div>
 							<div class="grid grid-cols-2">
-								<div class="flex"> <kbd id="I1" class="kbd mx-8 px-10">I1</kbd> <kbd id="I2" class="kbd mx-8 px-10">I2</kbd> </div>
-								<div class="flex"> <kbd id="I2" class="kbd mx-8 px-10">I3</kbd> <kbd id="I3" class="kbd mx-8 px-10">I4</kbd> </div>
+								<div class="flex"> <kbd id="I1" class="kbd hov mx-8 px-10">I1</kbd> <kbd id="I2" class="kbd hov mx-8 px-10">I2</kbd> </div>
+								<div class="flex"> <kbd id="I2" class="kbd hov mx-8 px-10">I3</kbd> <kbd id="I3" class="kbd hov mx-8 px-10">I4</kbd> </div>
 							</div>
 						</div>
 						<!-- seat J  -->
 						<div class="flex mx-8 gap-4 text-2xl font-semibold items-center my-6">
 							<div>I</div>
 							<div class="grid grid-cols-2">
-								<div class="flex"> <kbd id="J1" class="kbd mx-8 px-10">J1</kbd> <kbd id="J2" class="kbd mx-8 px-10">J2</kbd> </div>
-								<div class="flex"> <kbd id="J2" class="kbd mx-8 px-10">J3</kbd> <kbd id="J3" class="kbd mx-8 px-10">J4</kbd> </div>
+								<div class="flex"> <kbd id="J1" class="kbd hov mx-8 px-10">J1</kbd> <kbd id="J2" class="kbd hov mx-8 px-10">J2</kbd> </div>
+								<div class="flex"> <kbd id="J2" class="kbd hov mx-8 px-10">J3</kbd> <kbd id="J3" class="kbd hov mx-8 px-10">J4</kbd> </div>
 							</div>
 						</div>
 					</div>
@@ -285,7 +289,8 @@
 				<!-- Seat Buy Containers end  -->
 				<!-- Select Your Seat -->
 				<section>
-					<!-- Select Your Seat -->
+
+				<!-- Select Your Seat -->
 					<div class="bg-white rounded-2xl my-10">
 						<div class=" mt-8 mx-8">
 							<h3 class="text-2xl font-bold">Select Your Seat</h3> </div>
@@ -297,34 +302,31 @@
 					<div class="bg-[#F7F8F8] rounded-2xl shadow mx-8">
 						<div>
 							<div class="flex justify-between mx-8 pt-3 mb-4">
-								<h3 class="text-xl font-bold">Seat <span id="seat-count" class="bg-[#1DD100] text-sm text-white px-3 rounded-[5px] font-bold">2</span></h3>
+								<h3 class="text-xl font-bold">Seat 
+									<span id="seat-count" class="bg-[#1DD100] text-sm text-white px-3 rounded-[5px] font-bold">0</span></h3>
 								<h3 class="text-xl font-bold">Class</h3>
 								<h3 class="text-xl font-bold">Price</h3> </div>
 							<div class="border mx-8"> </div>
-							<div class="pt-4" id="seat-title-container">
-								<div class="text-xl mt-8 flex roboto justify-between mx-8 mb-4 ">
-									<h3 class="text-xl">C3</h3>
-									<p class="text-xl">Economy</p>
-									<h2 class="text-xl">550</h2> 
-								</div>
-								<div class="text-xl mt-8 flex justify-between mx-8mb-4 roboto">
-									<h3 class="text-xl">C3</h3>
-									<p class="text-xl">Economy</p>
-									<h2 class="text-xl">550</h2> 
-								</div>
-								
+							<div id="seat-title-container" class="pt-4">	
 							</div>
 						    <div class="divider divider-start mx-8"></div>
+
 							<div class=" flex justify-between mx-8 mb-4 roboto font-bold">
 								<h3 class="text-xl">TotalPrice</h3>
-								<h3 class="text-xl">BTD <span>1100</span></h3> </div>
-							<form class="bg-white  flex justify-center items-center rounded-[12px] mx-8">
-								<input class="input h-[65px] w-full border-none"></input>
-								<button class=" bg-[#1DD100] border-none text-2xl text-white py-4 px-16 rounded-[8px] font-semibold">Apply</button>
-							</form>
+								<h3 class="text-xl">BTD <span id="Total-Aumont">0</span></h3> 
+							</div>
+							<div id="discount-amount" class=" flex justify-between mx-8 mb-4 roboto font-bold">
+								
+							</div>
+
+							<div id="discount-section" class="bg-white  flex justify-center items-center rounded-[12px] mx-8">
+								<input id="coupon-input" class="input roboto h-[65px] w-full border-none" placeholder="Have any coupon?"></input>
+								<button id="coupon-apply" class=" bg-[#1DD100] border-none text-2xl text-white py-4 px-16 rounded-[8px] font-semibold" >Apply</button>
+							</div>
+
 							<div class=" flex justify-between mx-8 mt-4 pb-4 roboto font-bold">
 								<h3 class="text-xl">Grand Total</h3>
-								<h3 class="text-xl">BTD <span>1100</span></h3> 
+								<h3 class="text-xl">BTD <span id="Grand-Total" class="Grand-Total">0</span></h3> 
 							</div>
 
 						</div>
