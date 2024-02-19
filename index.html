@@ -322,18 +322,25 @@
 						</div>
 						<!-- tricked calculator end-->
 						<!-- Passenger Name info start -->
+
 						<div class="bg-white rounded-2xl my-8 mx-8 roboto">
 							<div class="mb-4 mx-8">
 								<label for="passenger-name" class="text-xl font-semibold"> Passenger Name* </label>
 								<input class="input w-full mt-3 py-7 border-[1px] border-gray-300 " id="passenger-name" type="text" placeholder="Enter your name"> </div>
+
 							<div class="mb-4 mx-8">
-								<label for="passenger-name" class="text-xl font-semibold"> Passenger Name* </label>
-								<input type="tel" class="input w-full mt-3 py-7 border-[1px] border-gray-300 " id="passenger-name" type="text" placeholder="Enter your phone number"> </div>
+								<label for="passenger-number" class="text-xl font-semibold"> Passenger Number* </label>
+								<input  class="input w-full mt-3 py-7 border-[1px] border-gray-300 " id="passenger-name" type="number" placeholder="Enter your phone number"> 
+							</div>
+
 							<div class="mb-4 mx-8">
-								<label for="passenger-name" class="text-xl font-semibold"> Email ID </label>
-								<input type="email" class="input w-full mt-3 py-7 border-[1px] border-gray-300" id="passenger-name" type="text" placeholder="Enter your email id"> </div>
+								<label for="passenger-email" class="text-xl font-semibold"> Email ID </label>
+								<input class="input w-full mt-3 py-7 border-[1px] border-gray-300" id="passenger-email" type="email" placeholder="Enter your email id">
+							 </div>
 							<!-- Open the modal using ID.showModal() method -->
-							<button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+							
+							<div class="mb-4 mx-8">
+								<button class="btn bg-green-400 w-full px-11  text-2xl h-[65px] text-white" onclick="my_modal_1.showModal()">Next</button>
 							<dialog id="my_modal_1" class="modal">
 								<div class="card w-[718px] h-[481px] m-[360px] y-[188px] roboto bg-base-100 shadow-xl">
 									<div class="flex flex-col justify-center items-center"> <img class="w-[100px] h-[98px] mt-14" src="./images/success.png" alt="">
@@ -342,11 +349,13 @@
 											<br> <span class="font-normal">Shortly you will find a confirmation in your email.</span></p>
 										<form method="dialog">
 											<!-- if there is a button in form, it will close the modal -->
-											<button class=" w-[300px] h-[55px] bg-green-400 hover:bg-slate-500 hov rounded-3xl my-5">Continue</button>
+											<button class=" w-[300px] h-[55px] bg-green-400 hover:bg-slate-500 hov rounded-3xl my-5" onclick="window.location.reload()">Continue</button>
 										</form>
 									</div>
 								</div>
 							</dialog>
+							</div>
+							
 						</div>
 						<!-- Passenger Name info start -->
 					</section>
